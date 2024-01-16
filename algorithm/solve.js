@@ -1,4 +1,5 @@
 function solve(wordList, target) {
+    if (!wordList.length || !target.length) return "None";
     let rest = target;
     const result = [];
     for (let word of wordList) {

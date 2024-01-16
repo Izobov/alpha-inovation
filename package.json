@@ -6,6 +6,11 @@
   "repository": "https://github.com/Izobov/alpha-inovation.git",
   "author": "Ivan Izobov <izobov9@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat clean && npx hardhat compile && npx hardhat test",
+    "coverage": "npx hardhat coverage"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "2.0.0",
     "@nomicfoundation/hardhat-ethers": "3.0.0",
@@ -19,8 +24,8 @@
     "ethers": "6.4.0",
     "hardhat": "^2.19.4",
     "hardhat-gas-reporter": "1.0.8",
-    "solidity-coverage": "0.8.0",
-    "typechain": "8.3.0"
-  },
-  "dependencies": {}
+    "solidity-coverage": "0.8.3",
+    "typechain": "8.3.0",
+    "web3-utils": "^4.1.0"
+  }
 }
